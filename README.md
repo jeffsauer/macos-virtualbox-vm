@@ -77,13 +77,21 @@ FS4: was determined after loading the drivers and doing a map -r.  Go to FS1:, F
 
 Ctrl-w to write the file. Ctrl-q to exit the editor
 
+# Screen Resolution
+
 To change the default VM screen resolution, run the following command:
 
 ```
 vboxmanage setextradata macOS_Mojave "VBoxInternal2/EfiGraphicsResolution" "1920x1080"
 ```
+# App Store
 
-Other helpful links:
+```
+defaults write com.apple.appstore.commerce Storefront -string "$(defaults read com.apple.appstore.commerce Storefront | sed s/,8/,13/)"
+```
+
+
+# Other helpful links:
 
 https://github.com/geerlingguy/macos-virtualbox-vm
 
