@@ -26,16 +26,31 @@ sudo guestmount -a macOS_Mojave.vmdk -m /dev/sda1 /mnt
 Copy the drivers to the EFI partion that was mounted:
 
 sudo -i
+
 cd /mnt
+
 mkdir EFI
+
 cd EFI
+
 mkdir driver
+
 cd driver
+
 cp (path to extracted)ApfsDriverLoader.efi .
+
 cp (path to extracted)AppleImageLoader.efi .
+
 cp (path to extracted)AppleUiSupport.efi .
+
 cd
+
 guestunmount /mnt
-  
+
+ 
+Boot the VM, the APFS drivers are not loaded, so it will default to the UEFI shell.
+Exit the shell by typing exit.
+Using the menus to boot from a file, and select the odd looking entry that has Macintosh HD label.
+
 
 
