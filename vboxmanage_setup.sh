@@ -8,6 +8,6 @@ vboxmanage setextradata macOS_Mojave "VBoxInternal/Devices/smc/0/Config/DeviceKe
 vboxmanage setextradata macOS_Mojave "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1
 
 # Serial number is needed to make iMessages work
-vboxmanage setextradata macOS_Mojave "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" C02PH2GMGJJ44
+vboxmanage setextradata macOS_Mojave "VBoxInternal/Devices/efi/0/Config/DmiSystemSerial" "serial-number"
 
 
