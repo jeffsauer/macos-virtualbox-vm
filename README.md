@@ -53,4 +53,25 @@ Exit the shell by typing exit.
 Using the menus to boot from a file, and select the odd looking entry that has Macintosh HD label.
 
 
+Once system is booting... create a UEFI script file to automate booting:
+
+Boot to UEFI firmware.
+
+FS0:
+edit boot.nsh
+
+insert the following:
+
+echo -off
+load fs0:\EFI\driver\AppleImageLoader.efi
+load fs0:\EFI\driver\AppleUiSupport.efi
+load fs0:\EFI\driver\ApfsDriverLoader.efi
+map -r
+FS4:
+cd System\Library\CoreServices\
+boot.efi
+
+FS4: was determined after loading the drivers and doing a map -r.  Go to FS1:, FS2:, FS3:, etc. until you see the System folder.
+
+Ctrl-w to write the file. Ctrl-q to exit the editor
 
