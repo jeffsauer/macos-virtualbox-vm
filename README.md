@@ -83,4 +83,11 @@ To change the default VM screen resolution, run the following command:
 vboxmanage setextradata macOS_Mojave "VBoxInternal2/EfiGraphicsResolution" "1920x1080"
 ```
 
+Other helpful links:
+
+https://github.com/geerlingguy/macos-virtualbox-vm
+https://forums.virtualbox.org/viewtopic.php?f=22&t=88258
+https://www.wikigain.com/install-macos-mojave-on-virtualbox-windows/
+https://hackintosher.com/guides/quick-fixes-facetime-icloud-imessage-hackintosh-not-working/
+
 
