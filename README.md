@@ -31,9 +31,9 @@ mkdir EFI
 cd EFI
 mkdir driver
 cd driver
-cp <path to extracted>ApfsDriverLoader.efi .
-cp <path to extracted>AppleImageLoader.efi .
-cp <path to extracted>AppleUiSupport.efi .
+cp (path to extracted)ApfsDriverLoader.efi .
+cp (path to extracted)AppleImageLoader.efi .
+cp (path to extracted)AppleUiSupport.efi .
 cd
 guestunmount /mnt
   
