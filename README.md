@@ -36,9 +36,9 @@ mkdir EFI
 cd EFI
 mkdir driver
 cd driver
-cp (path to extracted)ApfsDriverLoader.efi .
-cp (path to extracted)AppleImageLoader.efi .
 cp (path to extracted)AppleUiSupport.efi .
+cp (path to extracted)ApfsDriverLoader.efi .
+cp (path to extracted)UsbKbDxe.efi .
 cd
 guestunmount /mnt
 ```
@@ -62,9 +62,9 @@ insert the following:
 
 ```
 echo -off
-load fs0:\EFI\driver\AppleImageLoader.efi
 load fs0:\EFI\driver\AppleUiSupport.efi
 load fs0:\EFI\driver\ApfsDriverLoader.efi
+load fs0:\EFI\driver\UsbKbDxe.efi
 map -r
 FS4:
 cd System\Library\CoreServices\
