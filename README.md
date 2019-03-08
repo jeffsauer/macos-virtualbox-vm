@@ -13,6 +13,8 @@ Pre-compiled drivers can be downloaded here:
 
 https://github.com/acidanthera/AppleSupportPkg/releases
 
+As of this writing, v2.0.6 is being used.
+
 The drivers need to be installed onto the UEFI boot FAT partition inside of the vmdk file.  
 
 To mount the vmdk file in Linux, install:
@@ -74,4 +76,11 @@ boot.efi
 FS4: was determined after loading the drivers and doing a map -r.  Go to FS1:, FS2:, FS3:, etc. until you see the System folder.
 
 Ctrl-w to write the file. Ctrl-q to exit the editor
+
+To change the default VM screen resolution, run the following command:
+
+```
+vboxmanage setextradata macOS_Mojave "VBoxInternal2/EfiGraphicsResolution" "1920x1080"
+```
+
 
