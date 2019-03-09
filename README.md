@@ -86,9 +86,13 @@ vboxmanage setextradata macOS_Mojave "VBoxInternal2/EfiGraphicsResolution" "1920
 ```
 # App Store
 
+I have no idea what this does or why it works, but from the Mac open a terminal and run this command:
+
 ```
 defaults write com.apple.appstore.commerce Storefront -string "$(defaults read com.apple.appstore.commerce Storefront | sed s/,8/,13/)"
 ```
+
+https://www.tonymacx86.com/threads/appstore-the-operation-couldnt-be-completed-com-apple-commerce-client-error-500.270957/
 
 
 # Other helpful links:
